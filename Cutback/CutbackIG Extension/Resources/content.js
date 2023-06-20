@@ -40,7 +40,7 @@ async function ApplyAllBlockers() {
     hideSponsoredPosts();
     
     if(firstArticleGrabbed)
-        hideSuggestedPosts();
+      hideSuggestedPosts();
 }
 
 
@@ -93,8 +93,6 @@ async function getFirstArticleClassLength()
 {
     let articleElement = document.querySelector('article');  // Select the first <article> element
     desiredClassCount = articleElement.classList.length;  // Get the count of classes
-
-    console.log(classCount);  // Output the count
 }
 
 
@@ -287,7 +285,18 @@ spansWithText.forEach(span => {
  });
 }
 
+async function hideSuggestedPosts(){
+  const articles = document.querySelectorAll('article');
 
+  articles.forEach(article => {
+    if (article.classList.length == desiredClassCount - 1) {
+      const childDivs = article.getElementsByTagName('div');
+      for(let div of childDivs) {
+        div.style.display = "none";
+      }
+    }
+  });
+}
 
 
 /// ONLY RUN SCRIPTS IN HOME PAGE
@@ -309,7 +318,7 @@ else
 */
 
 if(firstArticleGrabbed == false){
-    setInterval(getFirstArticleClassLength, 500)
+    setTimeout(getFirstArticleClassLength, 500)
     firstArticleGrabbed = true
 }
 
