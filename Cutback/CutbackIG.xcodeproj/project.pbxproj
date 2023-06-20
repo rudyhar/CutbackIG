@@ -1,0 +1,611 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46E713802A3E9C3300AA798F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7137F2A3E9C3300AA798F /* AppDelegate.swift */; };
+		46E713842A3E9C3300AA798F /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 46E713822A3E9C3300AA798F /* Main.html */; };
+		46E713862A3E9C3300AA798F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E713852A3E9C3300AA798F /* Icon.png */; };
+		46E713882A3E9C3300AA798F /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 46E713872A3E9C3300AA798F /* Style.css */; };
+		46E7138A2A3E9C3300AA798F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E713892A3E9C3300AA798F /* SceneDelegate.swift */; };
+		46E7138C2A3E9C3300AA798F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7138B2A3E9C3300AA798F /* ViewController.swift */; };
+		46E7138F2A3E9C3300AA798F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E7138D2A3E9C3300AA798F /* LaunchScreen.storyboard */; };
+		46E713922A3E9C3300AA798F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E713902A3E9C3300AA798F /* Main.storyboard */; };
+		46E7139A2A3E9C3400AA798F /* CutbackIG Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 46E713992A3E9C3400AA798F /* CutbackIG Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46E7139F2A3E9C3400AA798F /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E7139E2A3E9C3400AA798F /* SafariWebExtensionHandler.swift */; };
+		46E713A22A3E9C3400AA798F /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 46E713A12A3E9C3400AA798F /* _locales */; };
+		46E713A42A3E9C3400AA798F /* images in Resources */ = {isa = PBXBuildFile; fileRef = 46E713A32A3E9C3400AA798F /* images */; };
+		46E713A62A3E9C3400AA798F /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 46E713A52A3E9C3400AA798F /* manifest.json */; };
+		46E713A82A3E9C3400AA798F /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 46E713A72A3E9C3400AA798F /* background.js */; };
+		46E713AA2A3E9C3400AA798F /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 46E713A92A3E9C3400AA798F /* content.js */; };
+		46E713AC2A3E9C3400AA798F /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 46E713AB2A3E9C3400AA798F /* popup.html */; };
+		46E713AE2A3E9C3400AA798F /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 46E713AD2A3E9C3400AA798F /* popup.css */; };
+		46E713B02A3E9C3400AA798F /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 46E713AF2A3E9C3400AA798F /* popup.js */; };
+		46E713B22A3E9C3400AA798F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E713932A3E9C3400AA798F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46E7139B2A3E9C3400AA798F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46E713742A3E9C3300AA798F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46E713982A3E9C3400AA798F;
+			remoteInfo = "CutbackIG Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		46E713B82A3E9C3400AA798F /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46E7139A2A3E9C3400AA798F /* CutbackIG Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		46E7137C2A3E9C3300AA798F /* CutbackIG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CutbackIG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E7137F2A3E9C3300AA798F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46E713832A3E9C3300AA798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		46E713852A3E9C3300AA798F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		46E713872A3E9C3300AA798F /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		46E713892A3E9C3300AA798F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		46E7138B2A3E9C3300AA798F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46E7138E2A3E9C3300AA798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46E713912A3E9C3300AA798F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46E713932A3E9C3400AA798F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46E713942A3E9C3400AA798F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E713992A3E9C3400AA798F /* CutbackIG Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CutbackIG Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E7139E2A3E9C3400AA798F /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		46E713A12A3E9C3400AA798F /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		46E713A32A3E9C3400AA798F /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		46E713A52A3E9C3400AA798F /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		46E713A72A3E9C3400AA798F /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		46E713A92A3E9C3400AA798F /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		46E713AB2A3E9C3400AA798F /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		46E713AD2A3E9C3400AA798F /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		46E713AF2A3E9C3400AA798F /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		46E713B12A3E9C3400AA798F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46E713792A3E9C3300AA798F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E713962A3E9C3400AA798F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46E713732A3E9C3300AA798F = {
+			isa = PBXGroup;
+			children = (
+				46E7137E2A3E9C3300AA798F /* CutbackIG */,
+				46E7139D2A3E9C3400AA798F /* CutbackIG Extension */,
+				46E7137D2A3E9C3300AA798F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46E7137D2A3E9C3300AA798F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46E7137C2A3E9C3300AA798F /* CutbackIG.app */,
+				46E713992A3E9C3400AA798F /* CutbackIG Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46E7137E2A3E9C3300AA798F /* CutbackIG */ = {
+			isa = PBXGroup;
+			children = (
+				46E7137F2A3E9C3300AA798F /* AppDelegate.swift */,
+				46E713892A3E9C3300AA798F /* SceneDelegate.swift */,
+				46E7138B2A3E9C3300AA798F /* ViewController.swift */,
+				46E7138D2A3E9C3300AA798F /* LaunchScreen.storyboard */,
+				46E713902A3E9C3300AA798F /* Main.storyboard */,
+				46E713932A3E9C3400AA798F /* Assets.xcassets */,
+				46E713942A3E9C3400AA798F /* Info.plist */,
+				46E713812A3E9C3300AA798F /* Resources */,
+			);
+			path = CutbackIG;
+			sourceTree = "<group>";
+		};
+		46E713812A3E9C3300AA798F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46E713822A3E9C3300AA798F /* Main.html */,
+				46E713852A3E9C3300AA798F /* Icon.png */,
+				46E713872A3E9C3300AA798F /* Style.css */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		46E7139D2A3E9C3400AA798F /* CutbackIG Extension */ = {
+			isa = PBXGroup;
+			children = (
+				46E7139E2A3E9C3400AA798F /* SafariWebExtensionHandler.swift */,
+				46E713B12A3E9C3400AA798F /* Info.plist */,
+				46E713A02A3E9C3400AA798F /* Resources */,
+			);
+			path = "CutbackIG Extension";
+			sourceTree = "<group>";
+		};
+		46E713A02A3E9C3400AA798F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46E713A12A3E9C3400AA798F /* _locales */,
+				46E713A32A3E9C3400AA798F /* images */,
+				46E713A52A3E9C3400AA798F /* manifest.json */,
+				46E713A72A3E9C3400AA798F /* background.js */,
+				46E713A92A3E9C3400AA798F /* content.js */,
+				46E713AB2A3E9C3400AA798F /* popup.html */,
+				46E713AD2A3E9C3400AA798F /* popup.css */,
+				46E713AF2A3E9C3400AA798F /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46E7137B2A3E9C3300AA798F /* CutbackIG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E713B92A3E9C3400AA798F /* Build configuration list for PBXNativeTarget "CutbackIG" */;
+			buildPhases = (
+				46E713782A3E9C3300AA798F /* Sources */,
+				46E713792A3E9C3300AA798F /* Frameworks */,
+				46E7137A2A3E9C3300AA798F /* Resources */,
+				46E713B82A3E9C3400AA798F /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46E7139C2A3E9C3400AA798F /* PBXTargetDependency */,
+			);
+			name = CutbackIG;
+			productName = CutbackIG;
+			productReference = 46E7137C2A3E9C3300AA798F /* CutbackIG.app */;
+			productType = "com.apple.product-type.application";
+		};
+		46E713982A3E9C3400AA798F /* CutbackIG Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E713B52A3E9C3400AA798F /* Build configuration list for PBXNativeTarget "CutbackIG Extension" */;
+			buildPhases = (
+				46E713952A3E9C3400AA798F /* Sources */,
+				46E713962A3E9C3400AA798F /* Frameworks */,
+				46E713972A3E9C3400AA798F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CutbackIG Extension";
+			productName = "CutbackIG Extension";
+			productReference = 46E713992A3E9C3400AA798F /* CutbackIG Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46E713742A3E9C3300AA798F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					46E7137B2A3E9C3300AA798F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					46E713982A3E9C3400AA798F = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 46E713772A3E9C3300AA798F /* Build configuration list for PBXProject "CutbackIG" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46E713732A3E9C3300AA798F;
+			productRefGroup = 46E7137D2A3E9C3300AA798F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46E7137B2A3E9C3300AA798F /* CutbackIG */,
+				46E713982A3E9C3400AA798F /* CutbackIG Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46E7137A2A3E9C3300AA798F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E713862A3E9C3300AA798F /* Icon.png in Resources */,
+				46E713922A3E9C3300AA798F /* Main.storyboard in Resources */,
+				46E7138F2A3E9C3300AA798F /* LaunchScreen.storyboard in Resources */,
+				46E713842A3E9C3300AA798F /* Main.html in Resources */,
+				46E713B22A3E9C3400AA798F /* Assets.xcassets in Resources */,
+				46E713882A3E9C3300AA798F /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E713972A3E9C3400AA798F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E713A82A3E9C3400AA798F /* background.js in Resources */,
+				46E713AE2A3E9C3400AA798F /* popup.css in Resources */,
+				46E713AC2A3E9C3400AA798F /* popup.html in Resources */,
+				46E713A42A3E9C3400AA798F /* images in Resources */,
+				46E713A62A3E9C3400AA798F /* manifest.json in Resources */,
+				46E713A22A3E9C3400AA798F /* _locales in Resources */,
+				46E713AA2A3E9C3400AA798F /* content.js in Resources */,
+				46E713B02A3E9C3400AA798F /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46E713782A3E9C3300AA798F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E7138C2A3E9C3300AA798F /* ViewController.swift in Sources */,
+				46E713802A3E9C3300AA798F /* AppDelegate.swift in Sources */,
+				46E7138A2A3E9C3300AA798F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46E713952A3E9C3400AA798F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46E7139F2A3E9C3400AA798F /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46E7139C2A3E9C3400AA798F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46E713982A3E9C3400AA798F /* CutbackIG Extension */;
+			targetProxy = 46E7139B2A3E9C3400AA798F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		46E713822A3E9C3300AA798F /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E713832A3E9C3300AA798F /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		46E7138D2A3E9C3300AA798F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E7138E2A3E9C3300AA798F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		46E713902A3E9C3300AA798F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46E713912A3E9C3300AA798F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46E713B32A3E9C3400AA798F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46E713B42A3E9C3400AA798F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46E713B62A3E9C3400AA798F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ULSZZ3H4C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CutbackIG Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CutbackIG Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudyharricks.CutbackIG.CutbackIG.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46E713B72A3E9C3400AA798F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ULSZZ3H4C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CutbackIG Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CutbackIG Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudyharricks.CutbackIG.CutbackIG.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		46E713BA2A3E9C3400AA798F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ULSZZ3H4C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CutbackIG/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CutbackIG;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudyharricks.CutbackIG.CutbackIG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46E713BB2A3E9C3400AA798F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ULSZZ3H4C7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CutbackIG/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CutbackIG;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rudyharricks.CutbackIG.CutbackIG;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46E713772A3E9C3300AA798F /* Build configuration list for PBXProject "CutbackIG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E713B32A3E9C3400AA798F /* Debug */,
+				46E713B42A3E9C3400AA798F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E713B52A3E9C3400AA798F /* Build configuration list for PBXNativeTarget "CutbackIG Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E713B62A3E9C3400AA798F /* Debug */,
+				46E713B72A3E9C3400AA798F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46E713B92A3E9C3400AA798F /* Build configuration list for PBXNativeTarget "CutbackIG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46E713BA2A3E9C3400AA798F /* Debug */,
+				46E713BB2A3E9C3400AA798F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46E713742A3E9C3300AA798F /* Project object */;
+}
