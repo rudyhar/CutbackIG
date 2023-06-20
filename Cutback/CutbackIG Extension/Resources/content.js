@@ -31,16 +31,18 @@ console.log("CONTENT HAS LOADED FOR INSTA CUSTOMIZER");
 
 
 async function ApplyAllBlockers() {
-//    hideLikedBy();
+    //    hideLikedBy();
     hideLikedAlt();
     // hideSuggested();
     hideStories();
-//    hideReelsButton();
+    hideReelsButton();
     hideExplorePage();
     hideSponsoredPosts();
     
-    if(firstArticleGrabbed)
-      hideSuggestedPosts();
+    if(onHomePage())
+    {
+        hideSuggested();
+    }
 }
 
 
@@ -164,7 +166,7 @@ function hideReelsButton() {
         // if the aria-label of the SVG is "Reels"
         if (svgs[i].getAttribute("aria-label") === "Reels") {
             // hide the grandparent of the SVG
-            var grandparent = svgs[i].parentNode.parentNode.parentNode;
+            var grandparent = svgs[i].parentNode.parentNode;
             if (grandparent) {
                 grandparent.style.display = "none";
             }
@@ -297,6 +299,22 @@ async function hideSuggestedPosts(){
     }
   });
 }
+
+function onHomePage() {
+      var svgElements = document.querySelectorAll('svg');
+      
+      for (var i = 0; i < svgElements.length; i++) {
+          var ariaLabel = svgElements[i].getAttribute('aria-label');
+          if (ariaLabel === 'Instagram') {
+              return true;
+          }
+      }
+      
+      return false;
+  }
+
+
+
 
 
 /// ONLY RUN SCRIPTS IN HOME PAGE
