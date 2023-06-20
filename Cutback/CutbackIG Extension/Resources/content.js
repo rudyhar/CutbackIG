@@ -22,12 +22,8 @@ browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
       console.log("Hello from the background script");
       hideSuggested();
       hideStories();
-
     }
 });
-
-console.log("CONTENT HAS LOADED FOR INSTA CUSTOMIZER");
-
 
 
 async function ApplyAllBlockers() {
@@ -301,17 +297,19 @@ async function hideSuggestedPosts(){
 }
 
 function onHomePage() {
-      var svgElements = document.querySelectorAll('svg');
-      
-      for (var i = 0; i < svgElements.length; i++) {
-          var ariaLabel = svgElements[i].getAttribute('aria-label');
-          if (ariaLabel === 'Instagram') {
-              return true;
-          }
-      }
-      
-      return false;
-  }
+      // Find SVG elements with the aria-label attribute set to "Instagram"
+    const instagramSvg = Array.from(document.querySelectorAll('svg[aria-label="Instagram"]'));
+    // Check if any SVG with aria-label "Instagram" exists
+    const hasInstagramSvg = instagramSvg.some(svg => svg.getAttribute('aria-label') === 'Instagram');
+
+    // Find SPAN elements and filter those with the text "Past Posts"
+    const pastPostsSpan = Array.from(document.querySelectorAll('span')).filter(span => span.textContent === 'Past Posts');
+    // Check if any SPAN with text "Past Posts" exists
+    const hasPastPostsSpan = pastPostsSpan.length > 0;
+
+    // If either SVG with aria-label "Instagram" or SPAN with text "Past Posts" exists, return true
+    return hasInstagramSvg || hasPastPostsSpan;
+}
 
 
 
